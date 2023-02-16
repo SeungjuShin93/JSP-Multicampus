@@ -1,0 +1,14 @@
+Servers
+build
+META-INF
+WEB-INF
+*.settings/
+*.project
+*.classpath
+
+
+/.metadata/
+
+
+
+
