@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login_Info</title>
+  </head>
+  <body>
+    <form action="">
+      <table border="1">
+        <tr>
+          <td width="200px"><label for="username">아이디</label></td>
+          <td width="600px">
+            <input
+              id="username"
+              type="text"
+              minlength="6"
+              maxlength="10"
+              size="30"
+              placeholder="(최소6~최대10, 숫자와알파벳만 사용"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password">비밀번호</label></td>
+          <td>
+            <input
+              id="password"
+              type="password"
+              minlength="6"
+              maxlength="10"
+              size="20"
+              required
+            />
+            (최소6~최대10, 숫자와알파벳만 사용)
+          </td>
+        </tr>
+        <tr>
+          <td><label for="passwordCheck">비밀번호 확인</label></td>
+          <td>
+            <input
+              id="passwordCheck"
+              type="password"
+              minlength="6"
+              maxlength="10"
+              size="20"
+              required
+            />
+            (최소6~최대10, 숫자와알파벳만 사용)
+          </td>
+        </tr>
+        <tr>
+          <td><label for="personalInfo">주민번호</label></td>
+          <td>
+            <input
+              id="personalInfo"
+              type="text"
+              minlength="6"
+              maxlength="6"
+              size="8"
+              required
+            />
+            -
+            <input type="text" minlength="7" maxlength="7" size="10" required />
+          </td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <td>
+            <input type="radio" name="gender" value="male" required />남자
+            <input type="radio" name="gender" value="female" required />여자
+          </td>
+        </tr>
+        <tr>
+          <td><label for="phone">전화번호</label></td>
+          <td>
+            <input
+              id="phone"
+              type="tel"
+              name="usrtel"
+              minlength="3"
+              maxlength="3"
+              size="4"
+              required
+            />
+            -
+            <input
+              type="tel"
+              name="usrtel"
+              minlength="4"
+              maxlength="4"
+              size="5"
+              required
+            />
+            -
+            <input
+              type="tel"
+              name="usrtel"
+              minlength="4"
+              maxlength="4"
+              size="5"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">이메일</label></td>
+          <td>
+            <input id="email" type="email" size="20" required />
+            @
+            <select>
+              <datalist id="addresslist">
+                <option>naver.com</option>
+                <option>gmail.com</option>
+                <option>daum.net</option>
+              </datalist>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>취미</td>
+          <td>
+            <input type="checkbox" />등산 <input type="checkbox" />독서
+            <input type="checkbox" />스키 <input type="checkbox" />음악
+            <input type="checkbox" />영화
+          </td>
+        </tr>
+        <tr>
+          <td><label for="intro">자기소개</label></td>
+          <td>
+            <textarea id="intro" rows="5" cols="60" name="contents">
+                &nbsp;&nbsp;
+            </textarea>
+          </td>
+        </tr>
+        <tr align="center">
+          <td colspan="2">
+            <input type="submit" value="입력" />
+            <input type="reset" value="취소" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
