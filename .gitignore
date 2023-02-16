@@ -1,14 +1,11 @@
 Servers
 build
 META-INF
-WEB-INF
+WEB-INF 
 *.settings/
 *.project
 *.classpath
-
-
+ZTempPractice
 /.metadata/
-
-
-
+*.gitignore
 
