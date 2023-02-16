@@ -2,9 +2,30 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>table basic</title>
 </head>
 <body>
-
+  <table border="1" width="400px">
+    <!-- colspan:셀의 너비 지정 // rowspan 셀의 높이 지정 -->
+    <tr>
+      <td colspan="2">1</td>
+      <td rowspan="2" colspan="2">3</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+  </table>
 </body>
 </html>
