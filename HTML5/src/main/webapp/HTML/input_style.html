@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input style</title>
+    <style>
+      input {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 5px 0;
+        box-sizing: border-box;
+      }
+      input[type='text'] {
+        border: solid 2px #fff4b5;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+      }
+      input[type='text']:focus {
+        border: solid 2px #d2691e;
+      }
+      input[type='password'] {
+        border: solid 1px black;
+      }
+      input[type='password']:focus {
+        background-color: #e0ffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>포커스가 있는 input 요소의 스타일 설정</h1>
+    <form>
+      사용자 : <br />
+      <input type="text" name="username" /><br />
+      비밀번호 : <br />
+      <input type="password" name="password" />
+    </form>
+  </body>
+</html>
