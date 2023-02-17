@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Font Property</title>
+    <style>
+      .a {
+        font-size: 32px;
+      }
+      .b {
+        font-size: 2em;
+      }
+      .c {
+        font-size: large;
+      }
+      .d {
+        font-size: small;
+      }
+      .font_arial {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .font_roman {
+        font-family: 'Times New Roman', Arial, serif;
+      }
+      .font_big {
+        font-size: 2em;
+      }
+      .font_italic {
+        font-style: italic;
+      }
+      .font_bold {
+        font-weight: bold;
+      }
+      .font_center {
+        text-align: center;
+      }
+      .font_right {
+        text-align: right;
+      }
+      /* 폰트를 여러개 기술하는 이유는 그 폰트가 없을 시 다음에 기술한 폰트가 적용 */
+
+      .button {
+        width: 150px;
+        height: 70px;
+        background-color: #ff6a00;
+        border: 10px solid #ffffff;
+        border-radius: 30px;
+        box-shadow: 50px 50px 5px #a9a9a9;
+        /* box-shadow는 가로위치, 세로위치, 흐릿한 정도, (네번째는 양수면 확장, 음수면 축소),색상 */
+      }
+      .button > a {
+        display: block;
+        line-height: 70px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: yellow;
+      }
+      .decLetterSpacing {
+        letter-spacing: -3px;
+        word-spacing: 20px;
+      }
+      .incLetterSpacing {
+        letter-spacing: 10px;
+        word-spacing: -25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum</h1>
+    <p class="a">Lorem ipsum</p>
+    <p class="b">Lorem ipsum</p>
+    <p class="c">Lorem ipsum</p>
+    <p>Lorem ipsum</p>
+    <p class="d">Lorem ipsum</p>
+    <h1 class="font_arial">Lorem ipsum</h1>
+    <h1 class="font_roman">Lorem ipsum</h1>
+    <p class="font_big font_italic font_bold font_right">
+      Lorem ipsum dolor amet
+    </p>
+    <div class="button">
+      <a href="#" class="font_big font_italic font_bold font_center">Click</a>
+      <!-- block속성이 있는 태그에 수직 정렬을 지정할 수 있는 스타일 속성이 없음 -> line-height 사용해야 함 -->
+    </div>
+    <h1>letter-spacing 속성을 이용한 글자 간격 설정</h1>
+    <p class="decLetterSpacing">
+      글자 간격을 줄여봅시다! 단어 간격은 늘입니다!
+    </p>
+    <p>기본적인 글자 간격은 이 정도 입니다.</p>
+    <p class="incLetterSpacing">
+      글자 간격을 늘려봅시다! 단어 간격은 줄입니다!
+    </p>
+  </body>
+</html>
