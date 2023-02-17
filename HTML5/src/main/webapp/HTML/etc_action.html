@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Selector Basic</title>
+    <style>
+      h1:hover {
+        color: red;
+      }
+      h1:active {
+        color: blue;
+      }
+      /* input 태그가 사용 가능할 때
+      background-color 속성에 white 키워드를 적용합니다. */
+      input:enabled {
+        background-color: white;
+      }
+      /* input 태그가 사용 불가능할 때
+      background-color 속성에 gray 키워드를 적용합니다 */
+      input:disabled {
+        background-color: gray;
+      }
+      /* input 태그에 포커스를 맞출 때
+      background-color 속성에 orange 키워드를 적용합니다 */
+      input:focus {
+        background-color: orange;
+      }
+
+      input:enabled {
+        color: green;
+      }
+      input:disabled {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>반응 선택자, 마우스를 올리고 클릭을 해봐요</h1>
+    <h2>사용 가능</h2>
+    <input />
+    <h2>사용 불가능</h2>
+    <input disabled="disabled" />
+
+    <form action="url_of_form">
+      <label for="FirstField">First field (enabled):</label>
+      <input type="text" id="FirstField" value="Lorem" /><br />
+      <label for="SecondField">Second field (disabled):</label>
+      <input
+        type="text"
+        id="SecondField"
+        value="Ipsum"
+        disabled="disabled"
+      /><br />
+      <input type="button" value="Sumbit" />
+    </form>
+  </body>
+</html>
