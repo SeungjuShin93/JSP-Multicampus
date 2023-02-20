@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+      }
+      a:hover {
+        color: blue;
+        font-weight: bold;
+      }
+
+      body {
+        width: 960px;
+        margin: 10px 50px;
+        overflow: hidden;
+      }
+
+      #page_header h1 {
+        text-align: center;
+        text-shadow: 4px 2px 3px gray;
+      }
+      #page_header nav li {
+        display: inline-block;
+        margin: 30px 20px 20px 0;
+        text-align: left;
+      }
+      #posts {
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+      .post {
+        width: 75%;
+        float: left;
+        padding-right: 5%;
+      }
+      .post header,
+      #sidebar h3 {
+        margin: 20px 0;
+      }
+
+      #sidebar {
+        width: 20%;
+        float: right;
+        line-height: 30px;
+      }
+
+      #page_footer {
+        margin-top: 50px;
+        text-align: center;
+      }
+
+      #page_footer nav li {
+        display: inline-block;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="page_header">
+      <h1>HTML5</h1>
+      <nav>
+        <ul>
+          <li><a href="#">HTML5 API</a></li>
+          <li><a href="#">CSS3</a></li>
+          <li><a href="#">jQueryMObile</a></li>
+          <li><a href="#">PhoneGap</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="posts">
+      <article class="post">
+        <header>
+          <h2>HTML5 소개</h2>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dicta
+          officia natus molestiae sunt quos error voluptates eaque laborum in?
+          Dignissimos vero quis velit odit? Autem laborum quisquam eius
+          consequuntur! Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Rerum omnis reprehenderit voluptatibus dolorum non ullam eius.
+          Ipsa voluptatum in architecto rerum corporis, qui maxime saepe
+          necessitatibus? Sint pariatur consequuntur nulla.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum omnis
+          reprehenderit voluptatibus dolorum non ullam eius. Ipsa voluptatum in
+          architecto rerum corporis, qui maxime saepe necessitatibus? Sint
+          pariatur consequuntur nulla. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Rerum omnis reprehenderit voluptatibus dolorum non
+          ullam eius. Ipsa voluptatum in architecto rerum corporis, qui maxime
+          saepe necessitatibus? Sint pariatur consequuntur nulla. Lorem ipsum
+          dolor sit, amet consectetur adipisicing elit. Rerum omnis
+          reprehenderit voluptatibus dolorum non ullam eius. Ipsa voluptatum in
+          architecto rerum corporis, qui maxime saepe necessitatibus? Sint
+          pariatur consequuntur nulla.
+        </p>
+      </article>
+      <aside id="sidebar">
+        <nav>
+          <h3>다른 글들</h3>
+          <ul>
+            <li><a href="#">Sencha Touch</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">JSP</a></li>
+            <li><a href="#">Spring</a></li>
+            <li><a href="#">Android</a></li>
+            <li><a href="#">IOS</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </section>
+
+    <footer id="page_footer">
+      <p>&copy; 2023 삼성멀티캠퍼스</p>
+      <nav>
+        <ul>
+          <li><a href="#">홈페이지</a></li>
+          <li><a href="#">회사 소개</a></li>
+          <li><a href="#">서비스 항목</a></li>
+          <li><a href="#">개인정보 보호 정책</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

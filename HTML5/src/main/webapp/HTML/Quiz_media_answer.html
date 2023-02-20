@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 960px;
+        margin: 15px auto;
+        font-family: '맑은 고딕', '나눔고딕', Arial;
+      }
+
+      p {
+        margin: 0 0 15px 0;
+      }
+
+      p,
+      li {
+        line-height: 25px;
+      }
+      li {
+        list-style: none;
+      }
+
+      li > a {
+        text-decoration: none;
+        color: #192df0;
+      }
+      header#page_header {
+        width: 75%;
+        /* width: 75%;
+        text-align: center; */
+      }
+
+      #page_header h1 {
+        text-shadow: 4px 2px 2px gray;
+        text-align: center;
+      }
+
+      #page_header nav ul li {
+        font-size: 20px;
+      }
+      #page_header nav ul,
+      #sidebar nav ul,
+      #page_footer nav ul {
+        margin: 0;
+        padding: 0;
+      }
+      #sidebar nav ul li {
+        padding: 0 0 0 5px;
+      }
+      #page_header nav ul li,
+      #page_footer nav ul li {
+        padding: 0;
+        margin: 0 30px 0 0;
+        display: inline;
+      }
+
+      section#posts {
+        float: left;
+        width: 75%;
+        line-height: 40px;
+        text-align: justify;
+      }
+      aside#sidebar {
+        float: right;
+        width: 23%;
+      }
+
+      a:hover {
+        font-weight: bold;
+      }
+
+      footer#page_footer {
+        clear: both;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 40px 0 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="page_header">
+      <h1>HTML5</h1>
+      <nav>
+        <ul>
+          <li><a href="#">HTML5 API</a></li>
+          <li><a href="#">CSS3</a></li>
+          <li><a href="#">jQueryMObile</a></li>
+          <li><a href="#">PhoneGap</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="posts">
+      <article class="post">
+        <header>
+          <h2>HTML5 소개</h2>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dicta
+          officia natus molestiae sunt quos error voluptates eaque laborum in?
+          Dignissimos vero quis velit odit? Autem laborum quisquam eius
+          consequuntur! Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Rerum omnis reprehenderit voluptatibus dolorum non ullam eius.
+          Ipsa voluptatum in architecto rerum corporis, qui maxime saepe
+          necessitatibus? Sint pariatur consequuntur nulla.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum omnis
+          reprehenderit voluptatibus dolorum non ullam eius. Ipsa voluptatum in
+          architecto rerum corporis, qui maxime saepe necessitatibus? Sint
+          pariatur consequuntur nulla. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Rerum omnis reprehenderit voluptatibus dolorum non
+          ullam eius. Ipsa voluptatum in architecto rerum corporis, qui maxime
+          saepe necessitatibus? Sint pariatur consequuntur nulla. Lorem ipsum
+          dolor sit, amet consectetur adipisicing elit. Rerum omnis
+          reprehenderit voluptatibus dolorum non ullam eius. Ipsa voluptatum in
+          architecto rerum corporis, qui maxime saepe necessitatibus? Sint
+          pariatur consequuntur nulla.
+        </p>
+      </article>
+    </section>
+    <aside id="sidebar">
+      <nav>
+        <h3>다른 글들</h3>
+        <ul>
+          <li><a href="#">Sencha Touch</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">JSP</a></li>
+          <li><a href="#">Spring</a></li>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">IOS</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <footer id="page_footer">
+      <p>&copy; 2023 삼성멀티캠퍼스</p>
+      <nav>
+        <ul>
+          <li><a href="#">홈페이지</a></li>
+          <li><a href="#">회사 소개</a></li>
+          <li><a href="#">서비스 항목</a></li>
+          <li><a href="#">개인정보 보호 정책</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
