@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>push() 메소드</h1>
+
+    <script>
+      var arr = [1, true, 'JavaScript'];
+
+      document.write(arr.length + '<br>');
+      document.write(arr + '<br>');
+      arr.push('자바스크립트');
+      document.write(arr + '<br>');
+      document.write(arr.length + '<br>');
+      document.write(arr.pop() + '<br>');
+      document.write(arr + '<br>');
+      document.write(arr.length + '<br>');
+      document.write(arr.pop() + '<br>');
+      document.write(arr.length + '<br>');
+      document.write(arr + '<br><br>');
+
+      arr.push(2, '거짓');
+      document.write(arr.length + '<br>');
+      document.write(arr);
+    </script>
+  </body>
+</html>
