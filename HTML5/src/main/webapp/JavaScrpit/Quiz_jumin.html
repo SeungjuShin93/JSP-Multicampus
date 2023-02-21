@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jumin check</title>
+    <script>
+      function jumin_check(formdata) {
+        let w = 2,
+          chk,
+          hap = 0;
+        let str = formdata.ju1.value + '-' + formdata.ju2.value;
+        if (str.length != 14) return alert('공백이 있으면 안됩니다!');
+        for (let i = 0; i < str.length; i++) {
+          let ch = str.charAt(i); // 문자열에서 한문자씩 추출
+          if (i == 6) {
+            // '-'인지 검사
+            if (ch != '-') return false;
+          } else if (i == 7) {
+            // 성별 값 검사
+            if (!(ch == '1' || ch == '2' || ch == '3' || ch == '4'))
+              return alert('주민번호 뒷번호의 첫자리에는 1,2,3,4만 가능합니다');
+          } else if (ch < '0' || ch > '9')
+            // ch가 숫자인지 검사(유니코드로 비교)
+            return alert('주민번호는 숫자만 입력가능합니다');
+        }
+        for (let i = 0; i < str.length - 1; i++) {
+          if (i == 6)
+            // '-'은 합계 계산에서 스킵
+            continue;
+          hap += parseInt(str.substring(i, i + 1)) * w;
+          w++;
+          if (w == 10) w = 2; // w가 9다음은 2이므로...
+        }
+        chk = 11 - (hap % 11);
+        if (chk == 10) chk = 0;
+        else if (chk == 11) chk = 1;
+        if (chk == parseInt(str.substring(13, 14)))
+          alert('주민번호 : ' + str + '(O)');
+        else alert('주민번호 : ' + str + '(X)');
+      }
+    </script>
+  </head>
+  <body>
+    <form name="input_form" action="jumin_check.jsp" method="post">
+      <input type="text" size="6" maxlength="6" name="ju1" /> -
+      <input type="text" size="7" maxlength="7" name="ju2" />
+      <input type="button" value="체크" onclick="jumin_check(this.form)" />
+    </form>
+  </body>
+</html>
