@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // window.alert('Hello Javascript!!!');
+      // window는 생략 가능, 생략해도 자동으로 window가 붙음, window 객체
+      document.write('Hello Javascript!!!' + '<br/>');
+      //   window의 하위 객체에 document가 있음 document는 body내용
+      a = 10; // JS는 변수 선언문이 없어도 사용은 가능하나 가독성을 위해 const, let 사용할 것
+      document.write('a = ' + a + '<br/>');
+      console.log('a = ' + a); // 디버깅 가능
+      console.log('10' + '20');
+      console.log(10 + 20);
+      var radius = 10;
+      var pi = 3.14159265;
+      alert(2 * radius * pi);
+
+      var date = new Date();
+      var year = date.getFullYear();
+      var month = date.getMonth() + 1;
+      var day = date.getDate();
+      var week = date.getDay();
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+      var seconds = date.getSeconds();
+      var str = year + '년' + month + '월' + day + '일' + week + '요일';
+      document.write(str + '<br/>');
+
+      //   var array = new Array(); // 빈 배열
+      // array[0] = '가' // 빈 배열에 인덱스 추가
+      var array = ['가', '나', '다', '라'];
+      var array = Array('가', '나', '다', '라');
+      var array = new Array('가', '나', '다', '라');
+      document.write(array[0] + '<br/>');
+      document.write(array[1] + '<br/>');
+      document.write(array[2] + '<br/>');
+      document.write(array[3] + '<br/>');
+      array[100] = '마';
+      document.write(array[100] + '<br/>');
+      document.write(array.length + '<br/>');
+    </script>
+  </head>
+  <body></body>
+</html>
