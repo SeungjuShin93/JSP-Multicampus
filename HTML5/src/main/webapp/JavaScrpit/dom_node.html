@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Node</title>
+    <script>
+      // 이벤트를 연결합니다.
+      window.onload = function () {
+        console.log(document.children);
+        console.log(document.childNodes);
+        // HTML 문서의 모든 자식 노드 중에서 두 번째 노드의 이름을 선택함.
+        document.getElementById('document').innerHTML =
+          document.childNodes[0].nodeName;
+        // document.getElementById('document').innerHTML =
+        //   document.children[0].children;
+        console.log(document.childNodes[1].children);
+        console.log(document.childNodes[1].childNodes);
+
+        // html 문서의 모든 자식 노드 중에서 첫 번째 노드의 이름을 선택함.
+        document.getElementById('html').innerHTML =
+          document.childNodes[1].childNodes[0].nodeName;
+        console.log(document.children[0].children[1]);
+        document.children[0].children[1].children[1].innerHTML = 'test'; // 첫번째 p를 가르킴
+        // var obj = document.getElementById('document');
+        // obj.nextSibling.nextSibling.innerHTML = 'haha'; // nextSibling은 공백도 포함
+      };
+    </script>
+  </head>
+  <body>
+    <h1>nodeName 프로퍼티</h1>
+    <p id="document"></p>
+    <p id="html"></p>
+  </body>
+</html>

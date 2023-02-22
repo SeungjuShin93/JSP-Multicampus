@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+    <!-- script 내용을 h1과 h2 뒤에 적어야 적용 된다. 앞에 적으면 null 에러가 나옴 
+    그런데 HTML 내용이 너무 방대해져서 이벤트를 활용하면 좋음-->
+    <script>
+      window.onload = function () {
+        // h1 태그의 배경 색상을 변경합니다.
+        document.querySelector('h1').style.backgroundColor = 'red';
+
+        // h2 태그의 글자 색상을 변경합니다.
+        document.querySelector('h2').style.color = 'red';
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Process - 1</h1>
+    <h2>Process - 2</h2>
+    <!-- <script>
+      // h1 태그의 배경 색상을 변경합니다.
+      document.querySelector('h1').style.backgroundColor = 'red';
+
+      // h2 태그의 글자 색상을 변경합니다.
+      document.querySelector('h2').style.color = 'red';
+    </script> -->
+  </body>
+</html>
