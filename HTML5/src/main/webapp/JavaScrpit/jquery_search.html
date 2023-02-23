@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container * {
+        display: block;
+        border: 1px solid lightgray;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+      $(function () {
+        $('#parent').on('click', function () {
+          $('p').parent().css({ border: '2px solid red' }); // <p>요소의 부모 요소를 선택함.
+        }); // 해당 요소의 CSS 스타일을 변경함.
+        $('#next').on('click', function () {
+          $('h1').next().css({ border: '2px solid green' }); // <h4>요소의 바로 다음 형제 요소를 선택함.
+        }); // 해당 요소의 CSS 스타일을 변경함.
+        $('#children').on('click', function () {
+          $('ul').children().css({ border: '2px solid blue' }); // <p>요소의 자식 요소를 모두 선택함.
+        }); // 해당 요소의 CSS 스타일을 변경함.
+        $('#first').on('click', function () {
+          $('li').first().css({ border: '2px solid pink' }); // 선택한 <li>요소 중에서 첫 번째 요소만을 선택함.
+        }); // 해당 요소의 CSS 스타일을 변경함.
+        $('#last').on('click', function () {
+          $('li').last().css({ border: '2px solid orange' }); // 선택한 <li> 요소 중에서 마지막 요소만을 선택함.
+        }); // 해당 요소의 CSS 스타일을 변경함.
+      });
+    </script>
+  </head>
+  <body>
+    <h1>제이쿼리 탐색 메소드</h1>
+    <div class="container">
+      <div>
+        div 요소
+        <ul>
+          ul 요소
+          <li>li 요소</li>
+          <li>
+            li 요소
+            <p>
+              p 요소 (기준)
+              <span>span 요소</span>
+            </p>
+          </li>
+          <li>li 요소</li>
+        </ul>
+      </div>
+    </div>
+    <button id="parent">p 요소의 부모 요소</button>
+    <button id="next">h1 요소의 형제 요소</button>
+    <button id="children">ul 요소의 형제 요소</button>
+    <button id="first">첫번째 목록</button>
+    <button id="last">마지막 목록</button>
+  </body>
+</html>
