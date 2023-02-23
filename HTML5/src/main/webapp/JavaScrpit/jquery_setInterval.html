@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+      window.onload = function () {
+        var count = 0;
+        var image = document.getElementById('image');
+        var frames = [
+          '../IMG/0.png',
+          '../IMG/1.png',
+          '../IMG/2.png',
+          '../IMG/3.png',
+          '../IMG/4.png',
+          '../IMG/5.png',
+          '../IMG/6.png',
+          '../IMG/7.png',
+          '../IMG/8.png',
+          '../IMG/9.png',
+          '../IMG/10.png',
+          '../IMG/11.png',
+          '../IMG/12.png',
+          '../IMG/13.png',
+          '../IMG/14.png',
+        ];
+        // 타이머 반복을 시작합니다.
+        setInterval(function () {
+          image.src = frames[count % frames.length];
+          count++;
+        }, 1000 / 20);
+      };
+    </script>
+  </head>
+  <body>
+    <img id="image" />
+  </body>
+</html>
